@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SmartLight</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+    integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+  <script src="script/app.js"></script>
+  <script src="script/dataHandler.js"></script>
+
+
+  <link rel="stylesheet" href="https://use.typekit.net/exu2jgr.css">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/stylesheet.css">
+
+
+
+</head>
+
+<body>
+  <header class="c-nav-color">
+
+    <div class="c-nav o-container c-nowrap">
+
+      <a class="c-link c-hover-home" href="index.html">
+        <h1 class="c-header-title">Smart Light</h1>
+      </a>
+
+
+
+      <ul class="o-list">
+        <li class="o-list-item c-home"> <a class="c-link" href="index.html">Home</a></li>
+        <li class="o-list-item"><a class="c-link" href="historiek.html">Historiek</a></li>
+        <li class="o-list-item"><a class="c-link" href="uitschakelen.html">Uitschakelen</a></li>
+      </ul>
+
+
+
+    </div>
+
+
+
+  </header>
+
+
+  <article class="">
+    <div class="o-row o-container">
+
+      <h1>Overzicht</h1>
+
+
+      <button class="c-btn js-btn">
+        <div class="c-btn-item1">
+          Standaardmodus
+        </div>
+        <div class="c-btn-logo">
+
+          <svg class="c-logo" id="color_lens-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24">
+            <path id="Path_103" data-name="Path 103" d="M0,0H24V24H0Z" fill="none" />
+            <path id="Path_104" data-name="Path 104"
+              d="M12,3a9,9,0,0,0,0,18,1.5,1.5,0,0,0,1.11-2.51A1.494,1.494,0,0,1,14.23,16H16a5,5,0,0,0,5-5C21,6.58,16.97,3,12,3ZM6.5,12A1.5,1.5,0,1,1,8,10.5,1.5,1.5,0,0,1,6.5,12Zm3-4A1.5,1.5,0,1,1,11,6.5,1.5,1.5,0,0,1,9.5,8Zm5,0A1.5,1.5,0,1,1,16,6.5,1.5,1.5,0,0,1,14.5,8Zm3,4A1.5,1.5,0,1,1,19,10.5,1.5,1.5,0,0,1,17.5,12Z"
+              fill="#003585" />
+          </svg>
+
+          <div class="c-btn-item2">
+            Bepaal zelf de kleur
+          </div>
+      </button>
+
+      <button class="c-btn js-btn">
+        <div class="c-btn-item1">
+          Automatische modus
+        </div>
+        <div class="c-btn-logo">
+
+          <svg id="wb_incandescent-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path id="Path_107" data-name="Path 107" d="M0,0H24V24H0Z" fill="none" />
+            <path id="Path_108" data-name="Path 108"
+              d="M3.55,18.54l1.41,1.41,1.79-1.8L5.34,16.74l-1.79,1.8ZM11,22.45h2V19.5H11ZM4,10.5H1v2H4ZM15,6.31V1.5H9V6.31a6,6,0,1,0,6,0Zm5,4.19v2h3v-2Zm-2.76,7.66,1.79,1.8,1.41-1.41-1.8-1.79-1.4,1.4Z"
+              fill="#003585" />
+          </svg>
+
+          <div class="c-btn-item2">
+            Belichting op basis van de lichtintensiteit
+          </div>
+      </button>
+
+      <button class="c-btn js-btn">
+        <div class="c-btn-item1">
+          Bewegingsmodus
+        </div>
+        <div class="c-btn-logo">
+
+          <svg id="remove_red_eye-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path id="Path_105" data-name="Path 105" d="M0,0H24V24H0Z" fill="none" />
+            <path id="Path_106" data-name="Path 106"
+              d="M12,4.5A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5ZM12,17a5,5,0,1,1,5-5A5,5,0,0,1,12,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,12,9Z"
+              fill="#003585" />
+          </svg>
+
+          <div class="c-btn-item2">
+            Belichting springt aan als er beweging is
+          </div>
+      </button>
+
+    </div>
+
+
+    </div>
+  </article>
+
+</body>
+
+</html>
